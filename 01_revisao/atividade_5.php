@@ -1,9 +1,9 @@
 <?php
+$soma = 0;
+$valores = [2,3,4,5,6];
 
-$dias = ["Segunda","Terça","Quarta","Quinta","Sexta","Sábado","Domingo"];
-
-foreach($dias as $dia){
-    echo"<br> Dia:".$dia;
-   
+foreach ($valores as $item) {
+   $soma += $item;
 }
+echo "A soma dos 5 números é = ". $soma;
 ?>
