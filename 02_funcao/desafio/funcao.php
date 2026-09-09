@@ -7,6 +7,7 @@ function calcularPedido($nome, $preco, $quantidade, $desconto = 0, $imposto = 0)
     $valorTotalComDesconto = $subTotal - $valorDesconto;
     $valorImposto = $valorTotalComDesconto * ($imposto/100);
     $totalFinal = $valorTotalComDesconto + $valorImposto;
+   
 
     return [
         "nomeProduto" => $nome,
@@ -15,6 +16,12 @@ function calcularPedido($nome, $preco, $quantidade, $desconto = 0, $imposto = 0)
         "valorImposto" => $valorImposto,
         "totalFinal" => $totalFinal
     ];
+}
+
+function calculoFrete($valorTotal){
+    $frete = $valorTotal * (10/100);
+    $TotalComFrete = $frete + $valorTotal;
+    return $TotalComFrete;
 }
 ?>
  
