@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 1 - Atividade 4</title>
+    <title>Exercício 6 - Atividade 4</title>
 </head>
 <body>
     <h1>Calcular IMC</h1>

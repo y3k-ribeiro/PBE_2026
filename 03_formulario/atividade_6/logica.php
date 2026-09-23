@@ -2,7 +2,7 @@
 
 $valor_ingresso = 25;
 
-$nome = $_POST['nome'];
+$nome = $_POST['Nome do Cliente'];
 $filme = $_POST['filme'];
 $qtd_ingresso = $_POST['qtd_ingresso'];
 $tipo = $_POST['tipo'];
