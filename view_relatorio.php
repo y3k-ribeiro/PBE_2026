@@ -23,7 +23,7 @@
                 <tbody>
                     <?php foreach ($produtos as $produto): ?>
                     <tr>
-                       <td><?= $produto['produto']?></td>
+                       <td><?= $produto['nome_produto']?></td>
                        <td><?= $produto['preco']?></td>
                        <td><?= $produto['quantidade']?></td>
                        <td><?= $produto['subtotal']?></td>
