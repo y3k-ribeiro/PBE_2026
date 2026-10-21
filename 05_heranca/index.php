@@ -1,0 +1,45 @@
+<?php
+
+require_once "Turma.php";
+
+// criando o professor
+
+$professor = new Professor("Leonardo Evangelista","leonardo@email.com","Programação");
+
+// Criar turma
+// enviando o objeto professor, no caso o Leonardo
+$turma = new Turma("INFO", $professor); 
+
+// Criar alunos
+$aluno = new Aluno("Noemi Ribeiro","noemi@email.com","B456");
+$aluno->adicionarNota(8);
+$aluno->adicionarNota(7);
+$aluno->adicionarNota(9);
+
+$aluno2 = new Aluno("Lavinia Misael","lavinia@email.com","A123");
+$aluno2->adicionarNota(5);
+$aluno2->adicionarNota(6);
+$aluno2->adicionarNota(7);
+
+$aluno3 = new Aluno("Júlia Andrade","julia@email.com","C789");
+$aluno3->adicionarNota(9);
+$aluno3->adicionarNota(8);
+$aluno3->adicionarNota(10);
+
+// adiciono os alunos a turma criada
+$turma->adicionarAluno($aluno);
+$turma->adicionarAluno($aluno2);
+$turma->adicionarAluno($aluno3);
+
+// exibindo resumo da turma
+$turma->exibirDadosTurma();
+// exibindo lista de alunos
+$turma->listaAlunos();
+
+echo "<h4> Polimorfismo </h4>";
+// Mostrando o polimorfismo funcionando
+$pessoas = [$professor, $aluno, $aluno2];
+foreach($pessoas as $pessoa){
+    $pessoa->exibirDadosPessoa();
+    echo "<hr>";
+}
