@@ -40,7 +40,7 @@ class Paciente{
     }
 }
 
-$paciente new Paciente("Noemi",17, 59, 1.73);
+$paciente = new Paciente("Noemi",17,59, 1.73);
 
 $paciente->exibirFicha();
 
